@@ -1,0 +1,16 @@
+
+
+<div class="form-control">
+    <label for="Name">Name</label>
+    <input type="text" #name>
+    <label for="Name">Position/Role</label>
+    <select #role>
+        <option value="Student">Student</option>
+        <option value="Staff">Staff</option>
+    </select>
+    
+</div>
+
+<div class="btn">
+    <button (click)="AddPerson(name,role)"> Add Student</button>
+</div>
