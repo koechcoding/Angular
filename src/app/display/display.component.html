@@ -1,0 +1,15 @@
+
+<div *ngIf="person; else nodata">
+    <h1 [ngClass]="{red:person.role==='Student', blue:person.role==='Staff'}"
+        [ngStyle]="{color:person.role==='Student'?'white':'yellow'}"
+    
+    >{{person.name}}</h1>
+    <p>{{person.role}}</p>
+    
+    </div>
+    
+    
+    <ng-template #nodata>
+        <p> NO Student/Staff Please Add One!!</p>
+    </ng-template>
+    <app-sample></app-sample>
