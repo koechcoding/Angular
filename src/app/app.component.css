@@ -1,0 +1,36 @@
+
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.form-control input{
+    padding: 10px;
+}
+
+.form-control select {
+    padding: 10px;
+}
+
+.btn{
+    margin-top: 20px;
+
+}
+
+.btn button{
+    padding: 10px 15px;
+}
+
+.red{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
