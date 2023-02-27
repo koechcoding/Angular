@@ -1,0 +1,15 @@
+<input [(ngModel)]="category"/>
+<!-- <button (click)="Addproduct()"> ADD Product</button>
+<p>{{date|date:'full' }}</p> -->
+<!-- <p>{{PI|number:'1.0-2'|percent}}</p>
+<p>{{prom|async}}</p> -->
+<div  class="container">
+    <div class="content" *ngFor=" let product of products|filter:category:'name'">
+        <img src={{product.image}} alt="">
+        <h1>{{product.name | uppercase}}</h1>
+        <p>{{product.description| shorten:16}}</p>
+        <p>{{product.price|currency:'KSH ':'symbol':'3.0-0'}}</p>
+    </div>
+</div>
+
+
